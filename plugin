@@ -1,13 +1,13 @@
 <?php
 
-$sisestus = "Toomas Rannik, 03:05:07 Hannes Vaarikas, 03:05:09";
+$sisestus = "Toomas Rannik, 03:05:07 
+Hannes Vaarikas, 03:05:09";
 
 $read = explode ("\n" , $sisestus);
 
-foreach ($read as $rida) 
-    {
-$tabel[]=explode("," , $read); }
-    foreach ($tabel as $rida)
+foreach ($read as $rida) $tabel[]=explode("," , $read); 
+
+foreach ($tabel as $rida)
 {
 echo "<tr>"
 foreach ($rida as $cell)
